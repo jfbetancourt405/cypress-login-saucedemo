@@ -10,6 +10,7 @@ describe('Login Sauce Demo', () => {
 
     cy.url().should('include', '/inventory.html')
     cy.contains('Products').should('be.visible')
+    cy.get('.shopping_cart_link').should('be.visible')
     // aquí irá el flujo paso a paso
   })
     it('Login fallido con credenciales inválidas', () => {
